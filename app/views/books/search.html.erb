@@ -1,0 +1,15 @@
+<table border=1>
+  <thead>
+    <th>title</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <% for item in @amazon_items %>
+    <tr>
+      <td><%= link_to item[:title], "#", :class => "amazon_title" %></td>
+      <td><%= link_to "商品紹介ページ", item[:url], :target => "_blank" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
